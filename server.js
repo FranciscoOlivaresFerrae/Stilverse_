@@ -6,14 +6,16 @@ const dotenv = require('dotenv');
 const path = require('path');
 const principalScreen = require('./routes/principalRoutes');
 const starsRoutes = require('./routes/starsRoutes');
-const planetsRoutes = require('./routes/planetsRoutes'); // 👈 nueva línea
+const planetsRoutes = require('./routes/planetsRoutes');
+const deepSkyRoutes = require('./routes/deepSkyRoutes');
 
 dotenv.config();
 
 const app = express();
 
 app.use('/stars', starsRoutes);
-app.use('/planets', planetsRoutes); // 👈 nueva línea
+app.use('/planets', planetsRoutes);
+app.use('/deepSkyObjects', deepSkyRoutes); // Ruta para Objetos del Cielo Profundo
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));

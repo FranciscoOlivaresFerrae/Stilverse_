@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/deepSky.css")
+  body
+    a(href="/" class="back-button") Regresar al inicio
+    .deep-sky-container
+      h1= title
+      each object in objects
+        .deep-sky-card
+          h2= object.Name
+          ul
+            li
+              strong Tipo:
+              |  #{object.Type || 'No disponible'}
+            li
+              strong Constelación:
+              |  #{object.Const || 'No disponible'}
+            li
+              strong Ascensión Recta (RA):
+              |  #{object.RA || 'No disponible'}
+            li
+              strong Declinación (Dec):
+              |  #{object.Dec || 'No disponible'}
+            li
+              strong Magnitud B:
+              |  #{object['B-Mag'] || 'No disponible'}
+            li
+              strong Identificadores:
+              |  #{object.Identifiers || 'No disponible'}
