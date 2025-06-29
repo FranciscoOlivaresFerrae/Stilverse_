@@ -1,0 +1,60 @@
+body {
+    background: #000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #eee;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #111, #333);
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background: #00ffcc;
+    color: #000;
+  }
+  
+  .comet-asteroids-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00ffcc;
+    margin-bottom: 3rem;
+  }
+  
+  .comet-asteroids-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  }
+  
+  .comet-asteroids-card h2 {
+    text-align: center;
+    color: #00ffcc;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comet-asteroids-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comet-asteroids-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .comet-asteroids-card li strong {
+    color: #00ffcc;
+  }
+  

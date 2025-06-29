@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/cometAsteroids.css")
+  body
+    a(href="/" class="back-button") Regresar al inicio
+    .comet-asteroids-container
+      h1= title
+      each object in objects
+        .comet-asteroids-card
+          h2= object.name
+          ul
+            li
+              strong Tipo:
+              |  #{object.type}
+            li
+              strong Órbita:
+              |  #{object.orbit}
+            li
+              strong Tamaño:
+              |  #{object.size}
+            li
+              strong Composición:
+              |  #{object.composition}
+            li
+              strong Eventos notables:
+              |  #{object.events}

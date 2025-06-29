@@ -8,6 +8,7 @@ const principalScreen = require('./routes/principalRoutes');
 const starsRoutes = require('./routes/starsRoutes');
 const planetsRoutes = require('./routes/planetsRoutes');
 const deepSkyRoutes = require('./routes/deepSkyRoutes');
+const cometAsteroidsRoutes = require('./routes/cometAsteroidsRoutes'); // 👈 nueva línea
 
 dotenv.config();
 
@@ -15,7 +16,8 @@ const app = express();
 
 app.use('/stars', starsRoutes);
 app.use('/planets', planetsRoutes);
-app.use('/deepSkyObjects', deepSkyRoutes); // Ruta para Objetos del Cielo Profundo
+app.use('/deepSkyObjects', deepSkyRoutes);
+app.use('/cometAsteroids', cometAsteroidsRoutes); // 👈 nueva línea
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
