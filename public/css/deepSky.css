@@ -1,60 +1,68 @@
+/* Estilo general del cuerpo de la página */
 body {
-    background: #000;
-    font-family: 'Courier New', Courier, monospace;
-    color: #ccc;
-    margin: 0;
-    padding: 2rem;
-  }
-  
-  .back-button {
-    display: inline-block;
-    margin-bottom: 2rem;
-    padding: 10px 20px;
-    background: linear-gradient(145deg, #111, #333);
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .back-button:hover {
-    background: #00ffcc;
-    color: #000;
-  }
-  
-  .deep-sky-container h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #00ffcc;
-    margin-bottom: 3rem;
-  }
-  
-  .deep-sky-card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    padding: 1.5rem;
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
-  }
-  
-  .deep-sky-card h2 {
-    text-align: center;
-    color: #00ffcc;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .deep-sky-card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .deep-sky-card li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .deep-sky-card li strong {
-    color: #00ffcc;
-  }
-  
+  background: #000; /* Fondo negro */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  color: #ccc; /* Texto gris claro */
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Botón de retroceso */
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #111, #333); /* Degradado gris oscuro */
+  border: 1px solid #00ffcc; /* Borde turquesa */
+  color: #00ffcc; /* Texto turquesa */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Botón de retroceso al pasar el mouse */
+.back-button:hover {
+  background: #00ffcc; /* Fondo turquesa */
+  color: #000; /* Texto negro */
+}
+
+/* Título principal del contenedor de cielo profundo */
+.deep-sky-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 3rem;
+}
+
+/* Tarjeta individual para cada objeto del cielo profundo */
+.deep-sky-card {
+  background: #111; /* Fondo gris oscuro */
+  border: 1px solid #222;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3); /* Sombra turquesa */
+}
+
+/* Título dentro de la tarjeta */
+.deep-sky-card h2 {
+  text-align: center;
+  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Lista de propiedades dentro de la tarjeta */
+.deep-sky-card ul {
+  list-style: none; /* Quita las viñetas */
+  padding: 0;
+}
+
+/* Elemento de la lista */
+.deep-sky-card li {
+  margin-bottom: 0.5rem;
+}
+
+/* Texto destacado dentro de los elementos de la lista */
+.deep-sky-card li strong {
+  color: #00ffcc;
+}

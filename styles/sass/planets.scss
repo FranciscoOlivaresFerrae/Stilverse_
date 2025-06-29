@@ -1,74 +1,84 @@
+/* Estilos generales del cuerpo de la página */
 body {
-    background: #000;
-    font-family: 'Courier New', Courier, monospace;
-    color: #ccc;
-  }
-  
-  .back-button {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
-    background: linear-gradient(145deg, #222, #444);
-    color: #00ffcc;
-    border: 1px solid #00ffcc;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .back-button:hover {
-    background: #00ffcc;
-    color: #000;
-  }
-  
-  .planet-container {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .planet-container h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #00ffcc;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .planet-card {
-    background: #111;
-    border: 1px solid #333;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    padding: 1.5rem;
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
-  }
-  
-  .planet-card h2 {
-    text-align: center;
-    color: #00ffcc;
-    font-size: 2rem;
-  }
-  
-  .planet-card img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 200px;
-    border: 2px solid #00ffcc;
-    border-radius: 4px;
-  }
-  
-  .planet-card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .planet-card li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-  }
-  
-  .planet-card li strong {
-    color: #00ffcc;
-  }
-  
+  background: #000; /* Fondo negro */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  color: #ccc; /* Texto gris claro */
+}
+
+/* Botón de retroceso */
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #222, #444); /* Degradado gris oscuro */
+  color: #00ffcc; /* Texto turquesa */
+  border: 1px solid #00ffcc; /* Borde turquesa */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Botón de retroceso al pasar el mouse */
+.back-button:hover {
+  background: #00ffcc; /* Fondo turquesa */
+  color: #000; /* Texto negro */
+}
+
+/* Contenedor principal de planetas */
+.planet-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Título principal del contenedor de planetas */
+.planet-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 2rem;
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Tarjeta individual de planeta */
+.planet-card {
+  background: #111; /* Fondo gris oscuro */
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); /* Sombra turquesa */
+}
+
+/* Título de la tarjeta de planeta */
+.planet-card h2 {
+  text-align: center;
+  color: #00ffcc;
+  font-size: 2rem;
+}
+
+/* Imagen de planeta dentro de la tarjeta */
+.planet-card img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  border: 2px solid #00ffcc;
+  border-radius: 4px;
+}
+
+/* Lista dentro de la tarjeta de planeta */
+.planet-card ul {
+  list-style: none; /* Quita viñetas */
+  padding: 0;
+}
+
+/* Elementos de la lista */
+.planet-card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Texto destacado dentro de la lista */
+.planet-card li strong {
+  color: #00ffcc;
+}

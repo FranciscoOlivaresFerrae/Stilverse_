@@ -1,56 +1,66 @@
+@charset "UTF-8";
+/* Estilos generales del cuerpo de la página */
 body {
-  background-color: #0b0c2a;
-  color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: 0 0, 25px 25px;
+  background-color: #0b0c2a; /* Fondo azul oscuro */
+  color: #f0f0f0; /* Texto gris claro */
+  font-family: Arial, sans-serif; /* Fuente sans-serif */
+  background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px); /* Patrón de puntos simulando estrellas */
+  background-size: 50px 50px; /* Tamaño del patrón */
+  background-position: 0 0, 25px 25px; /* Posicionamiento para crear patrón alternado */
 }
 
+/* Título principal */
 h1 {
   text-align: center;
-  color: #ffd700;
+  color: #ffd700; /* Dorado */
   margin-bottom: 20px;
 }
 
+/* Estilo general de la tabla */
 table {
   width: 100%;
-  border-collapse: collapse;
-  background-color: rgba(0, 0, 0, 0.6);
+  border-collapse: collapse; /* Fusiona bordes */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
 }
 
+/* Celdas y encabezados */
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* Borde gris claro */
   padding: 8px;
   text-align: center;
 }
 
+/* Encabezados de tabla */
 th {
-  background-color: #1c1f4a;
+  background-color: #1c1f4a; /* Azul oscuro */
   color: #f0f0f0;
 }
 
+/* Filas pares */
 tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
+/* Resaltado de fila al pasar el mouse */
 tr:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Botón de retroceso */
 .back-button {
   display: inline-block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #1c1f4a;
-  color: #fff;
+  background-color: #1c1f4a; /* Azul oscuro */
+  color: #fff; /* Texto blanco */
   text-decoration: none;
   border-radius: 5px;
 }
 
+/* Botón de retroceso al pasar el mouse */
 .back-button:hover {
-  background-color: #333866;
-  color: #ffd700;
+  background-color: #333866; /* Azul más claro */
+  color: #ffd700; /* Dorado */
 }
 
 /*# sourceMappingURL=stars.css.map */

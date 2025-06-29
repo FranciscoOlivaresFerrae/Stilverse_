@@ -1,11 +1,20 @@
+// Declaración del tipo de documento HTML
 doctype html
+
+// Elemento raíz
 html
   head
+    // Título de la página
     title Stilverse 
+    // Hoja de estilos principal
     link(rel='stylesheet', href='/css/styles.css')
+    // Icono de la pestaña del navegador
     link(rel='icon', href='cthulhu.png', type='image/x-icon')
+  
   body
+    // Encabezado de la página
     header
+      // Barra de navegación
       nav
         ul
           li: a(href='/') Inicio
@@ -14,15 +23,19 @@ html
           li: a(href='/deepSkyObjects') Objetos del Cielo Profundo
           li: a(href='/cometAsteroids') Cometas y Asteroides
           li
+            // Formulario de búsqueda
             form(action='/search', method='get')
               input(type='text', name='query', placeholder='Buscar objetos celestes...')
               button(type='submit') Buscar
               
-      // Botón de retroceso (no se muestra en la página principal)
+      // Botón de retroceso solo si no es la página principal
       if !isMainPage
         button.back-button(onclick='window.history.back()') Volver
     
+    // Bloque de contenido dinámico (insertado por otras plantillas)
     block content
+
+    // Script para función de retroceso (no usado actualmente, solo referencia)
     script.
       function goBack() {
         window.history.back();

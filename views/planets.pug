@@ -1,17 +1,34 @@
+// Declaración del tipo de documento HTML
 doctype html
+
+// Elemento raíz
 html
   head
+    // Título dinámico de la página
     title= title
+    // Hoja de estilos para la sección de planetas
     link(rel="stylesheet", href="/css/planets.css")
+  
   body
+    // Botón para regresar al inicio
     a(href="/" class="back-button") Regresar al inicio
+
+    // Contenedor principal de planetas
     .planet-container
+      // Título principal dinámico
       h1= title
+
+      // Itera sobre cada planeta en la lista
       each planet in planets
         .planet-card
+          // Nombre del planeta
           h2= planet.name
+
+          // Imagen del planeta si existe
           if planet.image
             img(src=planet.image, alt=planet.name)
+          
+          // Lista de propiedades del planeta
           ul
             li
               strong Masa:

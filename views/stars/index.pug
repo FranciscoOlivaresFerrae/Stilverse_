@@ -1,13 +1,24 @@
+// Declaración del tipo de documento HTML
 doctype html
+
+// Elemento raíz
 html
   head
+    // Título de la página
     title Catálogo de Estrellas
+    // Hoja de estilos para la página de estrellas
     link(rel="stylesheet", href="/css/stars.css")
+  
   body
+    // Encabezado principal
     h1 Catálogo de Estrellas
-a.button.back-button(href='/') Volver a Inicio
 
+    // Botón para volver a inicio
+    a.button.back-button(href='/') Volver a Inicio
+
+    // Si hay estrellas en el arreglo
     if estrellas.length
+      // Tabla de datos
       table(border="1")
         thead
           tr
@@ -22,6 +33,7 @@ a.button.back-button(href='/') Volver a Inicio
             th Datos Históricos
             th Mitología
         tbody
+          // Itera sobre cada estrella
           each estrella in estrellas
             tr
               td= estrella.source_id
@@ -35,6 +47,8 @@ a.button.back-button(href='/') Volver a Inicio
               td= estrella.datos_historicos
               td= estrella.mitologia
     else
+      // Mensaje si no hay datos
       p No se encontraron datos de estrellas.
 
+    // Botón para volver a inicio al final de la página
     a.button.back-button(href='/') Volver a Inicio

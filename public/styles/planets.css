@@ -1,30 +1,42 @@
+/* Contenedor principal de la sección de planetas */
 .planet-container {
-  padding: 2rem;
-  background: #000;
-  color: #fff;
+  padding: 2rem; /* Espaciado interno */
+  background: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
 }
+
+/* Título principal dentro del contenedor de planetas */
 .planet-container h1 {
   text-align: center;
   font-size: 2.5rem;
 }
+
+/* Tarjeta individual de cada planeta */
 .planet-container .planet-card {
-  background: #111;
-  border-radius: 8px;
-  margin: 1rem 0;
-  padding: 1rem;
+  background: #111; /* Fondo gris oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 1rem 0; /* Espaciado vertical */
+  padding: 1rem; /* Espaciado interno */
 }
+
+/* Imagen dentro de la tarjeta de planeta */
 .planet-container .planet-card img {
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto; /* Centrado horizontal */
   max-width: 200px;
   height: auto;
 }
+
+/* Lista dentro de la tarjeta de planeta */
 .planet-container .planet-card ul {
-  list-style: none;
+  list-style: none; /* Quita viñetas */
   padding: 0;
 }
+
+/* Elementos de la lista */
 .planet-container .planet-card ul li {
   margin-bottom: 0.5rem;
 }
 
-/*# sourceMappingURL=planets.css.map */
+/* Comentario de mapeo de origen del archivo SCSS */
+ /*# sourceMappingURL=planets.css.map */

@@ -1,60 +1,68 @@
+/* Estilos generales del cuerpo de la página */
 body {
-    background: #000;
-    font-family: 'Courier New', Courier, monospace;
-    color: #eee;
-    margin: 0;
-    padding: 2rem;
-  }
-  
-  .back-button {
-    display: inline-block;
-    margin-bottom: 2rem;
-    padding: 10px 20px;
-    background: linear-gradient(145deg, #111, #333);
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .back-button:hover {
-    background: #00ffcc;
-    color: #000;
-  }
-  
-  .comet-asteroids-container h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #00ffcc;
-    margin-bottom: 3rem;
-  }
-  
-  .comet-asteroids-card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    padding: 1.5rem;
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
-  }
-  
-  .comet-asteroids-card h2 {
-    text-align: center;
-    color: #00ffcc;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .comet-asteroids-card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .comet-asteroids-card li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .comet-asteroids-card li strong {
-    color: #00ffcc;
-  }
-  
+  background: #000; /* Fondo negro */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  color: #eee; /* Color de texto gris claro */
+  margin: 0; /* Sin margen externo */
+  padding: 2rem; /* Relleno interno */
+}
+
+/* Botón de retroceso */
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #111, #333); /* Degradado gris oscuro */
+  border: 1px solid #00ffcc; /* Borde color turquesa */
+  color: #00ffcc; /* Texto turquesa */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos cuando el botón se pasa el mouse por encima */
+.back-button:hover {
+  background: #00ffcc; /* Fondo turquesa */
+  color: #000; /* Texto negro */
+}
+
+/* Título principal del contenedor */
+.comet-asteroids-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00ffcc; /* Turquesa */
+  margin-bottom: 3rem;
+}
+
+/* Tarjeta individual de cometas y asteroides */
+.comet-asteroids-card {
+  background: #111; /* Fondo gris oscuro */
+  border: 1px solid #222; /* Borde ligeramente más claro */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 1.5rem 0; /* Espaciado vertical */
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3); /* Sombra turquesa */
+}
+
+/* Título de cada tarjeta */
+.comet-asteroids-card h2 {
+  text-align: center;
+  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Lista dentro de cada tarjeta */
+.comet-asteroids-card ul {
+  list-style: none; /* Quita viñetas */
+  padding: 0; /* Quita relleno */
+}
+
+/* Elementos de la lista */
+.comet-asteroids-card li {
+  margin-bottom: 0.5rem; /* Espacio entre elementos */
+}
+
+/* Texto destacado dentro de la lista */
+.comet-asteroids-card li strong {
+  color: #00ffcc; /* Turquesa */
+}

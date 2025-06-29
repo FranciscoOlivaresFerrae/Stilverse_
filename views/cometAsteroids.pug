@@ -1,14 +1,27 @@
+// Declaración del tipo de documento HTML
 doctype html
+
+// Elemento raíz
 html
   head
+    // Título de la página dinámico
     title= title
+    // Hoja de estilos para cometas y asteroides
     link(rel="stylesheet", href="/css/cometAsteroids.css")
+  
   body
+    // Botón para regresar al inicio
     a(href="/" class="back-button") Regresar al inicio
+
+    // Contenedor principal de la página
     .comet-asteroids-container
+      // Título principal dinámico
       h1= title
+
+      // Itera sobre cada objeto (cometa o asteroide)
       each object in objects
         .comet-asteroids-card
+          // Nombre del objeto
           h2= object.name
           ul
             li
