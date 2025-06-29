@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/planets.css")
+  body
+    a(href="/" class="back-button") Regresar al inicio
+    .planet-container
+      h1= title
+      each planet in planets
+        .planet-card
+          h2= planet.name
+          if planet.image
+            img(src=planet.image, alt=planet.name)
+          ul
+            li
+              strong Masa:
+              |  #{planet.mass}
+            li
+              strong Diámetro:
+              |  #{planet.diameter}
+            li
+              strong Composición:
+              |  #{planet.composition}
+            li
+              strong Atmósfera:
+              |  #{planet.atmosphere}
+            li
+              strong Lunas:
+              |  #{planet.moons}
+            li
+              strong Misiones:
+              |  #{planet.missions}
+            li
+              strong Características:
+              |  #{planet.features}

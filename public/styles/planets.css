@@ -1,0 +1,30 @@
+.planet-container {
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+}
+.planet-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.planet-container .planet-card {
+  background: #111;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.planet-container .planet-card img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  height: auto;
+}
+.planet-container .planet-card ul {
+  list-style: none;
+  padding: 0;
+}
+.planet-container .planet-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=planets.css.map */

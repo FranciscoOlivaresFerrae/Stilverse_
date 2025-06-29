@@ -1,0 +1,75 @@
+body {
+  background: #000;
+  font-family: "Courier New", Courier, monospace;
+  color: #ccc;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #222, #444);
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+.planet-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.planet-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.planet-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.planet-card h2 {
+  text-align: center;
+  color: #00ffcc;
+  font-size: 2rem;
+}
+
+.planet-card img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  border: 2px solid #00ffcc;
+  border-radius: 4px;
+}
+
+.planet-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.planet-card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.planet-card li strong {
+  color: #00ffcc;
+}
+
+/*# sourceMappingURL=planets.css.map */
