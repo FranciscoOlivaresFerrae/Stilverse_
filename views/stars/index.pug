@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Catálogo de Estrellas
+    link(rel="stylesheet", href="/css/stars.css")
+  body
+    h1 Catálogo de Estrellas
+a.button.back-button(href='/') Volver a Inicio
+
+    if estrellas.length
+      table(border="1")
+        thead
+          tr
+            th ID
+            th Nombre
+            th Tipo Espectral
+            th RA
+            th DEC
+            th Magnitud
+            th Distancia
+            th Constelación
+            th Datos Históricos
+            th Mitología
+        tbody
+          each estrella in estrellas
+            tr
+              td= estrella.source_id
+              td= estrella.nombre
+              td= estrella.tipo_espectral
+              td= estrella.ra
+              td= estrella.dec
+              td= estrella.phot_g_mean_mag
+              td= estrella.distancia
+              td= estrella.constelacion
+              td= estrella.datos_historicos
+              td= estrella.mitologia
+    else
+      p No se encontraron datos de estrellas.
+
+    a.button.back-button(href='/') Volver a Inicio
